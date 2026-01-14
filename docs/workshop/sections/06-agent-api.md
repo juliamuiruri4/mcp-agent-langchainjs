@@ -129,7 +129,6 @@ Then, inside the `postChats` function, add this code after the `// TODO: Impleme
       configuration: { baseURL: azureOpenAiEndpoint },
       modelName: process.env.AZURE_OPENAI_MODEL ?? 'gpt-5-mini',
       streaming: true,
-      useResponsesApi: true,
       apiKey: getAzureOpenAiTokenProvider(),
     });
 ```
