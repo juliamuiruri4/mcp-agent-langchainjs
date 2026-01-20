@@ -17,6 +17,7 @@ background-image: url(images/ai.jpg)
 
 ---
 
+exclude: true
 class: center, middle, hide-handle
 # Who are we?
 
@@ -76,7 +77,11 @@ class: center
 class: center, middle, big-text
 # Get started
 
-.bit-larger[👉 https://aka.ms/ws/mcp-agent]
+.bit-larger[https://aka.ms/mcp-agent-26 <br>☝️☝️☝️]
+
+.full-layer.stick-bottom.center[
+  .small[Live orders: https://aka.ms/mcp-agent-26/orders]
+]
 
 ---
 

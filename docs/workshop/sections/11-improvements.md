@@ -44,7 +44,7 @@ Let's analyze this prompt to understand what's going on:
 </div>
 
 That's it!
-You can now test your changes by running the buger MCP server, the agent API and the agent webapp again.
+You can now test your changes by running the burger MCP server, the agent API and the agent webapp again.
 
 In the agent webapp you should now see the follow-up questions after you get an answer:
 

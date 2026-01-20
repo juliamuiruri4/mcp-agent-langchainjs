@@ -32,9 +32,9 @@ azd down --purge
 
 This workshop is based on the enterprise-ready sample **AI Agent with MCP tools using LangChain.js**, available in the same repository as the one you used for the workshop: https://github.com/Azure-Samples/mcp-agent-langchainjs
 
-You'll notice a few differences between the workshop code and the sample code, as the sample code includes more advanced features such as authentication, conversation history, Agent CLI, data generation and more.
+You'll notice a few differences between the workshop code and the sample code, as the sample code includes more advanced features such as authentication, conversation history, Agent CLI, data generation and more. If you want to go further with more advanced use-cases, authentication, history and more, you should check it out!
 
-If you want to go further with more advanced use-cases, authentication, history and more, you should check it out!
+If you're more interested in learning about LangChain.js and its usage in agentic applications, you can take a look at this free online course: [LangChain.js for Beginners](https://github.com/microsoft/langchainjs-for-beginners).
 
 ### References
 
