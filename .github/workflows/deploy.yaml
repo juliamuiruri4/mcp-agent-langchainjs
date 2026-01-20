@@ -41,6 +41,8 @@ jobs:
             --client-id "$Env:AZURE_CLIENT_ID" `
             --federated-credential-provider "github" `
             --tenant-id "$Env:AZURE_TENANT_ID"
+
+          Add-Content -Path $Env:GITHUB_ENV -Value 'AZURE_LOGGED_IN=true'
         shell: pwsh
 
       - name: Log in with Azure (Client Credentials)
@@ -53,11 +55,14 @@ jobs:
             --client-id "$($info.clientId)" `
             --client-secret "$($info.clientSecret)" `
             --tenant-id "$($info.tenantId)"
+
+          Add-Content -Path $Env:GITHUB_ENV -Value 'AZURE_LOGGED_IN=true'
         shell: pwsh
         env:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Provision and deploy application
+        if: ${{ env.AZURE_LOGGED_IN == 'true' }}
         run: azd up --no-prompt
         env:
           AZURE_ENV_NAME: ${{ vars.AZURE_ENV_NAME }}
